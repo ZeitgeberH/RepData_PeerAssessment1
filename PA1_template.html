@@ -257,11 +257,19 @@ suppressPackageStartupMessages(library(dplyr))
 <p>Caculate <strong>mean</strong>  total number of steps taken per day</p>
 
 <pre><code class="r">Mean1 &lt;- mean(DailySteps1$sum, na.rm = TRUE)
+Mean1
+</code></pre>
+
+<pre><code>## [1] 9354
 </code></pre>
 
 <p>Caculate <strong>median</strong> total number of steps taken per day</p>
 
 <pre><code class="r">Median1 &lt;- median(DailySteps1$sum, na.rm = TRUE)
+Median1
+</code></pre>
+
+<pre><code>## [1] 10395
 </code></pre>
 
 <h2>What is the average daily activity pattern?</h2>
@@ -363,7 +371,7 @@ CompareValues
 
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 
-<p>Create a new factor variable in the dataset with two levels &ndash; &ldquo;weekday&rdquo; and &ldquo;weekend&rdquo; indicating whether a given date is a weekday or weekend day.</p>
+<p>Create a new factor variable in the dataset with two levels - &ldquo;weekday&rdquo; and &ldquo;weekend&rdquo; indicating whether a given date is a weekday or weekend day.</p>
 
 <pre><code class="r">Sys.setlocale(&quot;LC_TIME&quot;, &quot;English&quot;)
 </code></pre>

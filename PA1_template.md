@@ -86,12 +86,22 @@ Caculate **mean**  total number of steps taken per day
 
 ```r
 Mean1 <- mean(DailySteps1$sum, na.rm = TRUE)
+Mean1
+```
+
+```
+## [1] 9354
 ```
 
 Caculate **median** total number of steps taken per day
 
 ```r
 Median1 <- median(DailySteps1$sum, na.rm = TRUE)
+Median1
+```
+
+```
+## [1] 10395
 ```
 
 
@@ -220,7 +230,7 @@ Obviously, means and medians increases after imputing missing values
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
+Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
 
 ```r

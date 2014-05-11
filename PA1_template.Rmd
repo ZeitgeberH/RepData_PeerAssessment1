@@ -75,10 +75,12 @@ qplot(sum,data=DailySteps1)+
 Caculate **mean**  total number of steps taken per day
 ```{r}
 Mean1<-mean(DailySteps1$sum,na.rm=TRUE)
+Mean1
 ```
 Caculate **median** total number of steps taken per day
 ```{r}
 Median1<-median(DailySteps1$sum,na.rm=TRUE)
+Median1
 ```
 
 
